@@ -1,4 +1,5 @@
 import pkg from './package'
+import axios from 'axios'
 
 export default {
   mode: 'universal',
@@ -11,6 +12,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+  env: {},
   loading: { color: '#fff' },
   css: [ '~/assets/app.css' ],
   styleResources: { scss: './assets/*.scss' },
@@ -23,6 +25,19 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources'
   ],
+  // generate: {
+  //   routes: function() {
+  //     return axios.get('')
+  //       .then((res) => {
+  //         return res.data.map((item) => {
+  //           return '/_/' + item.slug
+  //         })
+  //       })
+  //       .catch((err) => {
+  //         console.log('Error Generating: ' + err)
+  //       })
+  //   }
+  // },
   build: {
     extend(config, ctx) {
       if (ctx.isDev && ctx.isClient) {
