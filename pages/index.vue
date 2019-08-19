@@ -5,7 +5,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    this.$generalSeo()
+  }
+}
 </script>
 
 <style lang="scss" scoped>

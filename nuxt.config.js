@@ -14,7 +14,10 @@ export default {
   loading: { color: '#fff' },
   css: [ '~/assets/app.css' ],
   styleResources: { scss: './assets/*.scss' },
-  plugins: [],
+  plugins: [
+    '~/plugins/api.js',
+    '~/plugins/seo.js'
+  ],
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
