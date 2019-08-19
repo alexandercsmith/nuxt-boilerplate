@@ -2,7 +2,6 @@ import pkg from './package'
 
 export default {
   mode: 'universal',
-
   head: {
     title: pkg.name,
     meta: [
@@ -12,18 +11,15 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
-
   loading: { color: '#fff' },
-
   css: [ '~/assets/app.css' ],
-
+  styleResources: { scss: './assets/*.scss' },
   plugins: [],
-
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/style-resources'
   ],
-
   build: {
     extend(config, ctx) {
       if (ctx.isDev && ctx.isClient) {
