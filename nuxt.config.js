@@ -1,5 +1,5 @@
 import pkg from './package'
-import axios from 'axios'
+// import axios from 'axios'
 
 export default {
   mode: 'universal',
@@ -16,16 +16,14 @@ export default {
   loading: { color: '#fff' },
   css: [ '~/assets/app.css' ],
   styleResources: { scss: './assets/*.scss' },
-  plugins: [
-    '~/plugins/api.js',
-    '~/plugins/seo.js'
-  ],
+  plugins: [ '~/plugins/api.js', '~/plugins/seo.js' ],
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources'
   ],
   // // SPA: Generate Dynamic Pages
+  // // * Import 'axios'
   // generate: {
   //   routes: function() {
   //     return axios.get('https://')
