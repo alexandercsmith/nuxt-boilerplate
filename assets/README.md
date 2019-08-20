@@ -34,7 +34,7 @@ Column Layouts
 Useful Tools for Styling and Layouts
 
 ```
-@include flex(row,nowrap,center,flex-start);
+@include flex(row, nowrap, center, flex-start);
 
 
 @include position(absolute, 0, null, null, 0);

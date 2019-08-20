@@ -1,3 +1,4 @@
+// Flex-Box
 @mixin flex($direction, $wrap, $justify, $align) {
   display: flex;
   flex-direction: $direction;
@@ -6,6 +7,7 @@
   align-items: $align;
 }
 
+// Position
 @mixin position($pos, $top, $right, $bottom, $left) {
   display: $pos;
   top: $top;

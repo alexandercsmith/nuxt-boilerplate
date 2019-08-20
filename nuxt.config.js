@@ -25,16 +25,17 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources'
   ],
+  // // SPA: Generate Dynamic Pages
   // generate: {
   //   routes: function() {
-  //     return axios.get('')
+  //     return axios.get('https://')
   //       .then((res) => {
   //         return res.data.map((item) => {
   //           return '/_/' + item.slug
   //         })
   //       })
   //       .catch((err) => {
-  //         console.log('Error Generating: ' + err)
+  //         console.log('Error: [Generate] - ' + err)
   //       })
   //   }
   // },
