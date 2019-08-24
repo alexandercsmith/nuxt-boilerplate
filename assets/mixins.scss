@@ -15,3 +15,12 @@
   bottom: $bottom;
   left: $left;
 }
+
+// Grid
+@mixin grid($col, $colgap, $rowgap) {
+  display: grid;
+  grid-template-columns: $col;
+  grid-template-rows: auto;
+  grid-column-gap: $colgap;
+  grid-row-gap: $rowgap;
+}
