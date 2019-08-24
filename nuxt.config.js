@@ -1,8 +1,11 @@
+require('dotenv').config()
 import pkg from './package'
+import webpack from 'webpack'
 // import axios from 'axios'
 
 export default {
   mode: 'universal',
+
   head: {
     title: pkg.name,
     meta: [
@@ -12,16 +15,32 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
-  env: {},
+
+  env: {
+    apiUrl: process.env.API_URL || '',
+    cdnUrl: process.env.CDN_URL || ''
+  },
+
   loading: { color: '#fff' },
+
   css: [ '~/assets/app.css' ],
-  styleResources: { scss: './assets/*.scss' },
-  plugins: [ '~/plugins/api.js', '~/plugins/seo.js' ],
+
+  styleResources: {
+    scss: './assets/*.scss'
+  },
+
+  plugins: [
+    '~/plugins/api.js',
+    '~/plugins/seo.js'
+  ],
+
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    '@nuxtjs/dotenv',
     '@nuxtjs/style-resources'
   ],
+
   // // SPA: Generate Dynamic Pages
   // // * Import 'axios'
   // generate: {
@@ -37,7 +56,13 @@ export default {
   //       })
   //   }
   // },
+
   build: {
+    plugins: [
+      new webpack.ProvidePlugin({
+        '_': 'lodash'
+      })
+    ],
     extend(config, ctx) {
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({

@@ -9,6 +9,8 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-nav {}
-nav a {}
+nav {
+}
+nav a {
+}
 </style>

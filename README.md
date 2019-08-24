@@ -3,6 +3,7 @@
 > Description | Nuxt.js Project
 
 ## Development
+
 ``` bash
 # Install Dependencies
 $ npm install
@@ -18,6 +19,15 @@ $ npm start
 $ npm run generate
 ```
 
+
+## Deployment
+
+```bash
+```
+
+
 ## Documentation
+
 * [Nuxt.js - Documentation](https://nuxtjs.org)
 * [Nuxt.js - Axios](https://axios.nuxtjs.org/usage)
+* [Lodash](https://lodash.com/)

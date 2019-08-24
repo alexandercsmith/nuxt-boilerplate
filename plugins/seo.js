@@ -4,7 +4,11 @@ export default ({ store }, inject) => {
     return {
       title: store.site.title,
       meta: [
-        { name: 'description', hid: 'description', content: store.site.description },
+        {
+          name: 'description',
+          hid: 'description',
+          content: store.site.description
+        },
         { name: 'keywords', hid: 'keywords', content: store.site.keywords },
         { name: 'og:title', content: store.site.title },
         { name: 'og:description', content: store.site.description },
