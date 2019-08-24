@@ -38,14 +38,17 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/dotenv',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    ['@nuxtjs/google-analytics', {
+      id: process.env.ANALYTICS_ID,
+      dev: false
+    }]
   ],
 
   // // SPA: Generate Dynamic Pages
-  // // * Import 'axios'
   // generate: {
   //   routes: function() {
-  //     return axios.get('https://')
+  //     return axios.get(`${process.env.API_URL}/feed`)
   //       .then((res) => {
   //         return res.data.map((item) => {
   //           return '/_/' + item.slug
