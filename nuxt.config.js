@@ -23,6 +23,13 @@ export default {
 
   loading: { color: '#fff' },
 
+  // // SPA: Initial Loading Launch
+  // loadingIndicator: {
+  //   name: 'pulse',
+  //   color: '#fff',
+  //   background: '#00f'
+  // },
+
   css: [ '~/assets/app.css' ],
 
   styleResources: {
