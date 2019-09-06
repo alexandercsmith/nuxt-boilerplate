@@ -20,7 +20,8 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "cross-env": "^5.2.0",
     "lodash": "^4.17.15",
-    "nuxt": "^2.9.2"
+    "nuxt": "^2.9.2",
+    "vue-awesome": "^3.5.4"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
