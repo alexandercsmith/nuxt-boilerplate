@@ -13,4 +13,5 @@ nav {
 }
 nav a {
 }
+nav a.nuxt-link-exact-active {}
 </style>

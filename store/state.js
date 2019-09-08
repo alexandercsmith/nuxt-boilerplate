@@ -8,9 +8,9 @@ export default () => ({
     email: ''
   },
   socials: {
-    facebook: { username: '', url: '' },
-    instagram: { username: '', url: '' },
-    twitter: { username: '', url: '' },
-    youtube: { username: '', url: '' }
+    facebook: { username: '', url: '', icon: 'facebook-square' },
+    instagram: { username: '', url: '', icon: 'instagram' },
+    twitter: { username: '', url: '', icon: 'twitter-square' },
+    youtube: { username: '', url: '', icon: 'youtube-square' }
   }
 })
