@@ -5,7 +5,8 @@
 ## Todo
 * [nuxt-i18n](https://github.com/nuxt-community/nuxt-i18n)
 * [nuxt-sitemap](https://github.com/nuxt-community/sitemap-module)
-* 
+* [nuxt-localtunnel](https://github.com/nuxt-community/modules/tree/master/packages/localtunnel)
+* []
 
 ## Development
 
@@ -44,4 +45,5 @@ $ npm run generate
 * [Nuxt.js - PWA](https://github.com/nuxt-community/pwa-module)
 * [Nuxt.js - Style Resources](https://github.com/nuxt-community/style-resources-module)
 * [Nuxt.js - Google Analytics](https://github.com/nuxt-community/analytics-module)
+* [Nuxt.js - Style Resources](https://github.com/nuxt-community/style-resources-module)
 * [Lodash](https://lodash.com/)
