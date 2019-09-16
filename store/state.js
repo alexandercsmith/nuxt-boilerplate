@@ -16,7 +16,8 @@ export default () => ({
   },
   user: {
     authenticated: false,
-    email: ''
+    email: null,
+    token: null
   },
   blog: {
     articles: [],
