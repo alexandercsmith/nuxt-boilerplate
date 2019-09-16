@@ -8,10 +8,10 @@
 
 ## Development
 
-* Add `.env` file and variables if necessary
-  * API_URL
-  * CDN_URL
-  * ANALYTICS_ID
+Environment Variables
+* API_URL
+* CDN_URL
+* ANALYTICS_ID
 
 ``` bash
 # Install Dependencies
