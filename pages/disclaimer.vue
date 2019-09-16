@@ -1,6 +1,7 @@
 <template>
   <section>
     <h1>Disclaimer</h1>
+    <article></article>
   </section>
 </template>
 

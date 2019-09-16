@@ -1,6 +1,7 @@
 <template>
   <section>
     <h1>Privacy Policy</h1>
+    <article></article>
   </section>
 </template>
 
