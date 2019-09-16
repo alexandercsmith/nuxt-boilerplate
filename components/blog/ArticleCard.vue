@@ -5,7 +5,14 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    article: {
+      type: Object,
+      required: true
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped></style>

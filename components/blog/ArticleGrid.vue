@@ -1,11 +1,27 @@
 <template>
   <div>
-    <h1>Article Grid</h1>
+    <ArticleCard
+      v-for="article in articles"
+      :key="article.id"
+      :article="article"
+    />
   </div>
 </template>
 
 <script>
-export default {}
+import ArticleCard from '~/components/blog/ArticleCard'
+
+export default {
+  components: {
+    ArticleCard
+  },
+  props: {
+    articles: {
+      type: Array,
+      required: true
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped></style>

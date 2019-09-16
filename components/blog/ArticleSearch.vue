@@ -5,7 +5,22 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    search: {
+      type: String,
+      required: true
+    },
+    filter: {
+      type: String,
+      required: true
+    },
+    tags: {
+      type: Array,
+      required: true
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped></style>

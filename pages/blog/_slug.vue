@@ -1,15 +1,23 @@
 <template>
   <section>
-    <h1 v-text="article.title"></h1>
+    <ArticleHeader :article="article" />
+    <ArticleShare :article="article" />
+    <article v-text="article.body"></article>
   </section>
 </template>
 
 <script>
+import ArticleHeader from '~/components/blog/ArticleHeader'
+import ArticleShare from '~/components/blog/ArticleShare'
+
 export default {
+  components: {
+    ArticleHeader,
+    ArticleShare
+  }
   asyncData({ params }) {
-    let article = this.$fetchArticle(params.slug)
     return {
-      article: article
+      article: this.$fetchArticle(params.slug)
     }
   },
   head() {
