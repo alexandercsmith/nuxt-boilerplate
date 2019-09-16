@@ -3,10 +3,9 @@
 > Description | Nuxt.js Project
 
 ## Todo
-* [nuxt-i18n](https://github.com/nuxt-community/nuxt-i18n)
-* [nuxt-sitemap](https://github.com/nuxt-community/sitemap-module)
-* [nuxt-localtunnel](https://github.com/nuxt-community/modules/tree/master/packages/localtunnel)
-* []
+* Internationalization - [nuxt-i18n](https://github.com/nuxt-community/nuxt-i18n)
+* Sitemap - [nuxt-sitemap](https://github.com/nuxt-community/sitemap-module)
+* Social Media Sharing Links - [Email, SMS, WhatsApp, Facebook, Twitter]
 
 ## Development
 

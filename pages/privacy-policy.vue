@@ -1,13 +1,13 @@
 <template>
   <section>
-    <h1>Home</h1>
+    <h1>Privacy Policy</h1>
   </section>
 </template>
 
 <script>
 export default {
   head() {
-    this.$generalSeo('Title')
+    this.$generalSeo('Privacy Policy')
   }
 }
 </script>

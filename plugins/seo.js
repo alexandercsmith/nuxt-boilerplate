@@ -1,8 +1,8 @@
 export default ({ store }, inject) => {
   // General SEO
-  inject('generalSeo', () => {
+  inject('generalSeo', (title) => {
     return {
-      title: store.state.site.title,
+      title: title,
       meta: [
         {
           name: 'description',
