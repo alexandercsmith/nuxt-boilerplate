@@ -59,7 +59,7 @@ export default {
   //     return axios.get(`${process.env.API_URL}/feed`)
   //       .then((res) => {
   //         return res.data.map((item) => {
-  //           return '/_/' + item.slug
+  //           return '/blog/' + item.slug
   //         })
   //       })
   //       .catch((err) => {
