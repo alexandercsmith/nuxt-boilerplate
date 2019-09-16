@@ -7,7 +7,7 @@
 <script>
 export default {
   head() {
-    this.$generalSeo('Title')
+    this.$articleSeo(this.article)
   }
 }
 </script>
