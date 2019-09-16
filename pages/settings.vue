@@ -8,7 +8,7 @@
 export default {
   middleware: 'authenticated',
   head() {
-    this.$generalSeo()
+    this.$generalSeo('Account')
   }
 }
 </script>

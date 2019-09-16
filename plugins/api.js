@@ -1,5 +1,8 @@
 export default ({ $axios }, inject) => {
-  // inject('apiFetch', () => {
-  //   return $axios.$get('')
-  // })
+  inject('fetchArticles', () => {
+    return $axios.$get(`${process.env.apiUrl}/articles`)
+  })
+  inject('fetchArticle', (id) => {
+    return $axios.$get(`${process.env.apiUrl}/articles/${id}`)
+  })
 }

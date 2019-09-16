@@ -19,6 +19,7 @@ export default () => ({
     email: ''
   },
   blog: {
-    articles: []
+    articles: [],
+    tags: []
   }
 })
