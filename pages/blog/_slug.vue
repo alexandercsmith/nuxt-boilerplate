@@ -15,16 +15,16 @@ export default {
     ArticleHeader,
     ArticleShare
   }
-  asyncData({ params }) {
+  asyncData({ store, params }) {
     return {
-      article: this.$fetchArticle(params.slug)
+      article: store.getters.getArticle(params.slug)
     }
   },
   head() {
     this.$articleSeo(this.article)
   },
   validate({ store, params, error }) {
-    if (store.state.blog.articles.find(obj => obj.slug === params.slug)) return true
+    if (store.getters.getArticles.find(obj => obj.slug === params.slug)) return true
     else {
       error({ statusCode: 404 })
     }
