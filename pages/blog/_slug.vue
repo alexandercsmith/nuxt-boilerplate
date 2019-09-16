@@ -22,6 +22,12 @@ export default {
   },
   head() {
     this.$articleSeo(this.article)
+  },
+  validate({ store, params, error }) {
+    if (store.state.blog.articles.find(obj => obj.slug === params.slug)) return true
+    else {
+      error({ statusCode: 404 })
+    }
   }
 }
 </script>
