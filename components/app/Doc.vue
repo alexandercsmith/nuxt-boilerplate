@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="doc-ctnr col-1-1">
     <div
       v-for="section in docs"
-      class="document"
+      class="doc"
       :key="section.id"
       :section="section"
     >
@@ -24,13 +24,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.document {
+.doc-cntr {
+  @include flex(column, nowrap, flex-start, center);
 }
-.document h2 {
+.doc {
 }
-.document p {
+.doc h2 {
 }
-.document p a {
+.doc p {
+}
+.doc p a {
   &:hover {
   }
 }
