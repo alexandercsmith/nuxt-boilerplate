@@ -46,3 +46,11 @@ $ npm run generate
 * [Nuxt.js - Style Resources](https://github.com/nuxt-community/style-resources-module)
 * [Nuxt.js - Sitemap](https://github.com/nuxt-community/sitemap-module)
 * [Lodash](https://lodash.com/)
+
+
+## Fonts
+
+* Roboto `https://fonts.googleapis.com/css?family=Roboto&display=swap`
+* Nanum Gothic `https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap`
+* Abel `https://fonts.googleapis.com/css?family=Abel&display=swap`
+* Mandali `https://fonts.googleapis.com/css?family=Mandali&display=swap`
