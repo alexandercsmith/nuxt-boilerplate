@@ -14,11 +14,6 @@ export default () => ({
     youtube: { username: '', url: '', icon: 'youtube-square' },
     github: { username: '', url: '', icon: 'github-square' }
   },
-  user: {
-    authenticated: false,
-    email: null,
-    token: null
-  },
   blog: {
     articles: [],
     tags: []
