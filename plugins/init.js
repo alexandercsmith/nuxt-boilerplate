@@ -1,3 +1,5 @@
 export default ({ store }, inject) => {
-  inject('clientInit', () => { store.dispatch('nuxtClientInit') })
+  // inject('clientInit', () => {
+  //   store.dispatch('nuxtClientInit')
+  // })
 }
