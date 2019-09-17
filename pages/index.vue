@@ -31,6 +31,8 @@
         <option value="2">Two</option>
       </select>
       <br />
+      <textarea></textarea>
+      <br />
       <input type="radio" /> Radio <br />
       <input type="checkbox" /> Checkbox <br />
       <input type="submit" />
