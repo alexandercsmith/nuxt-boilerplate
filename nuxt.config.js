@@ -36,7 +36,6 @@ export default {
       './assets/articles.scss',
       './assets/colors.scss',
       './assets/columns.scss',
-      './assets/forms.scss',
       './assets/mixins.scss',
       './assets/vars.scss'
     ]
