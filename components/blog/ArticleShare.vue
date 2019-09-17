@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="social-share">
     <h1>Article Share</h1>
   </div>
 </template>
@@ -15,4 +15,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.social-share {}
+</style>

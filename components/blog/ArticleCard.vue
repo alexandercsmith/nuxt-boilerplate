@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Article Card</h1>
+    <n-link :to="'/blog/' + article.slug">{{ article.title }}</n-link>
   </div>
 </template>
 

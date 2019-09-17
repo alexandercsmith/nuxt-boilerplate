@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="search-bar">
     <h1>Article Search</h1>
   </div>
 </template>
@@ -23,4 +23,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.search-bar {}
+</style>
