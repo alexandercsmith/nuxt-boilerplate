@@ -39,7 +39,8 @@ export default {
   plugins: [
     '~/plugins/api.js',
     '~/plugins/icons.js',
-    '~/plugins/seo.js'
+    '~/plugins/seo.js',
+    '~/plugins/users.js'
   ],
 
   modules: [

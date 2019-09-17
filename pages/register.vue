@@ -27,7 +27,10 @@ export default {
     this.$generalSeo('Register')
   },
   methods: {
-    register: function() {}
+    register: async function() {
+      await this.$registerUser(this.form)
+        .then()
+    }
   }
 }
 </script>

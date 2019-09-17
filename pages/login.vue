@@ -23,7 +23,10 @@ export default {
     this.$generalSeo('Login')
   },
   methods: {
-    login: function() {}
+    login: async function() {
+      await this.$auth.loginWith('local', )
+        .then()
+    }
   }
 }
 </script>
