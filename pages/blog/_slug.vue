@@ -14,17 +14,17 @@ export default {
   components: {
     ArticleHeader,
     ArticleShare
-  }
-  asyncData({ store, params }) {
-    return {
-      article: store.getters.getArticle(params.slug)
-    }
+  },
+  async asyncData({ store, params, payload }) {
+    if (payload) return { article: payload }
+    else return { article: await store.getters.getArticle(params.slug) }
   },
   head() {
     this.$articleSeo(this.article)
   },
   validate({ store, params, error }) {
-    if (store.getters.getArticles.find(obj => obj.slug === params.slug)) return true
+    if (store.getters.getArticles.find(obj => obj.slug === params.slug))
+      return true
     else {
       error({ statusCode: 404 })
     }

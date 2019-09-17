@@ -23,12 +23,11 @@ export default {
 
   loading: { color: '#fff' },
 
-  // // SPA: Initial Loading Launch
-  // loadingIndicator: {
-  //   name: 'pulse',
-  //   color: '#fff',
-  //   background: '#00f'
-  // },
+  loadingIndicator: {
+    name: 'pulse',
+    color: '#000000',
+    background: '#ffffff'
+  },
 
   css: [ '~/assets/app.css' ],
 
@@ -39,6 +38,7 @@ export default {
   plugins: [
     '~/plugins/api.js',
     '~/plugins/icons.js',
+    '~/plugins/init.js',
     '~/plugins/seo.js'
   ],
 
@@ -57,14 +57,14 @@ export default {
   generate: {
     routes: function() {
       return axios.get(`${process.env.API_URL}/articles`)
-        .then((res) => {
-          return res.data.map((item) => {
-            return `/blog/${item.slug}`
-          })
+      .then((res) => {
+        return res.data.map((item) => {
+          return {
+            route: `/blog/${item.slug}`,
+            payload: item
+          }
         })
-        .catch((err) => {
-          console.log('Error: ' + err)
-        })
+      })
     }
   },
 

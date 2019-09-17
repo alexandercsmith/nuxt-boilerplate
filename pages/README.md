@@ -7,8 +7,6 @@
 ## Directory
 * Home | About
 * Blog | Article
-* Dashboard | Settings
-* Login | Register | Password Reset | Verification
 * Privacy Policy | Terms & Conditions | Disclaimer
 
 

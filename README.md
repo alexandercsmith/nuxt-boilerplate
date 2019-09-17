@@ -44,4 +44,5 @@ $ npm run generate
 * [Nuxt.js - Style Resources](https://github.com/nuxt-community/style-resources-module)
 * [Nuxt.js - Google Analytics](https://github.com/nuxt-community/analytics-module)
 * [Nuxt.js - Style Resources](https://github.com/nuxt-community/style-resources-module)
+* [Nuxt.js - Sitemap](https://github.com/nuxt-community/sitemap-module)
 * [Lodash](https://lodash.com/)

@@ -1,26 +1,16 @@
 <template>
   <section>
     <h1>Terms & Conditions</h1>
-    <div
-      class="document"
-      v-for="section in termsConditions"
-      :key="section.id"
-      :section="section"
-    >
-      <TextBody
-        :title="section.title"
-        :body="section.body"
-      />
-    </div>
+    <Doc :docs="termsConditions" />
   </section>
 </template>
 
 <script>
-import TextBody from '~/components/app/TextBody'
+import Doc from '~/components/app/Doc'
 
 export default {
   components: {
-    TextBody
+    Doc
   },
   asyncData({ store }) {
     return {

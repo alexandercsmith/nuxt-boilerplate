@@ -15,6 +15,8 @@ nav {
 }
 nav a {
 }
-nav a:hover {}
-nav a.nuxt-link-exact-active {}
+nav a:hover {
+}
+nav a.nuxt-link-exact-active {
+}
 </style>

@@ -26,6 +26,7 @@ $xl: 1400px;
 .col-10-12 { width: 83.333%; }
 .col-11-12 { width: 91.66%; }
 
+// hide-at-X
 @media screen and (max-width: $xl) {
   .hide-at-xl { display: none !important; }
 }
@@ -42,6 +43,7 @@ $xl: 1400px;
   .hide-at-xs { display: none !important; }
 }
 
+// show-at-X
 @media screen and (min-width: $xl + 1) {
   .show-at-xl { display: none !important; }
 }
@@ -59,6 +61,8 @@ $xl: 1400px;
 }
 
 // $xl +
+// hide-on-X
+// show-on-X
 @media screen and (min-width: $xl + 1) {
   .max-1-1, .max-12-12 { width: 100%; }
   .max-1-2, .max-6-12 { width: 50%; }
@@ -89,6 +93,8 @@ $xl: 1400px;
 }
 
 // $lg -> $xl
+// hide-on-X
+// show-on-X
 @media screen and (min-width: $lg + 1) and (max-width: $xl) {
   .xl-1-1, .xl-12-12 { width: 100%; }
   .xl-1-2, .xl-6-12 { width: 50%; }
@@ -119,6 +125,8 @@ $xl: 1400px;
 }
 
 // $md -> $lg
+// hide-on-X
+// show-on-X
 @media screen and (min-width: $md + 1) and (max-width: $lg) {
   .lg-1-1, .lg-12-12 { width: 100%; }
   .lg-1-2, .lg-6-12 { width: 50%; }
@@ -149,6 +157,8 @@ $xl: 1400px;
 }
 
 // $sm -> $md
+// hide-on-X
+// show-on-X
 @media screen and (min-width: $sm + 1) and (max-width: $md) {
   .md-1-1, .md-12-12 { width: 100%; }
   .md-1-2, .md-6-12 { width: 50%; }
@@ -179,6 +189,8 @@ $xl: 1400px;
 }
 
 // $xs -> $sm
+// hide-on-X
+// show-on-X
 @media screen and (min-width: $xs + 1) and (max-width: $sm) {
   .sm-1-1, .sm-12-12 { width: 100%; }
   .sm-1-2, .sm-6-12 { width: 50%; }
@@ -209,6 +221,8 @@ $xl: 1400px;
 }
 
 // - $xs
+// hide-on-X
+// show-on-X
 @media screen and (max-width: $xs) {
   .xs-1-1, .xs-12-12 { width: 100%; }
   .xs-1-2, .xs-6-12 { width: 50%; }

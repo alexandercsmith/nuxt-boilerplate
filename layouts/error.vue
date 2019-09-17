@@ -19,8 +19,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1 {}
-h2 {}
-a {}
-a:hover {}
+h1 {
+}
+h2 {
+}
+a {
+}
+a:hover {
+}
 </style>

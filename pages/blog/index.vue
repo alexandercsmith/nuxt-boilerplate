@@ -1,11 +1,7 @@
 <template>
   <section>
     <h1>Blog</h1>
-    <ArticleSearch
-      :search="search"
-      :filter="filter"
-      :tags="tags"
-    />
+    <ArticleSearch :search="search" :filter="filter" :tags="tags" />
     <ArticleGrid :articles="articles" />
   </section>
 </template>
