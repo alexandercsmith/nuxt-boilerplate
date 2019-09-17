@@ -43,6 +43,7 @@ export default {
   ],
 
   modules: [
+    '@nuxtjs/auth',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/dotenv',
@@ -52,6 +53,10 @@ export default {
       dev: false
     }]
   ],
+
+  // auth: {
+  //
+  // },
 
   // // SPA: Generate Dynamic Pages
   // generate: {

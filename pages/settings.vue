@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  middleware: 'authenticated',
+  middleware: 'auth',
   head() {
     this.$generalSeo('Account')
   }
