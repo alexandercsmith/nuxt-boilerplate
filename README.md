@@ -2,9 +2,6 @@
 
 > Description | Nuxt.js Project
 
-## Todo
-* Internationalization - [nuxt-i18n](https://github.com/nuxt-community/nuxt-i18n)
-
 
 ## Development
 
