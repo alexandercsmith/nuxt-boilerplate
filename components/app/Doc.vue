@@ -2,8 +2,8 @@
   <div>
     <div
       v-for="section in docs"
-      :key="section.id"
       class="document"
+      :key="section.id"
       :section="section"
     >
       <h2 v-text="section.title"></h2>
