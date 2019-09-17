@@ -66,12 +66,12 @@ export default {
 
   generate: {
     routes: function() {
-      return axios.get(`${process.env.API_URL}/articles`)
+      return axios.get(`${process.env.CDN_URL}/data/blog.json`)
       .then((res) => {
-        return res.data.map((item) => {
+        return res.articles.map((article) => {
           return {
-            route: `/blog/${item.slug}`,
-            payload: item
+            route: `/blog/${article.slug}`,
+            payload: article
           }
         })
       })

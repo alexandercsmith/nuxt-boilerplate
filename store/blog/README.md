@@ -4,7 +4,7 @@
 ```json
 [
   "tags": [
-    "news"
+    "String"
   ],
   "articles": [
     {

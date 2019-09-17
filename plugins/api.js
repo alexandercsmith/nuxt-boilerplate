@@ -4,7 +4,7 @@ export default ({ $axios }, inject) => {
     return $axios.$get(`${process.env.cdnUrl}/data/docs.json`)
   })
   // Blog
-  inject('fetchArticles', () => {
+  inject('fetchBlog', () => {
     return $axios.$get(`${process.env.cdnUrl}/data/blog.json`)
   })
 }
