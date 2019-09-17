@@ -1,10 +1,10 @@
 export default ({ $axios }, inject) => {
   // Documents
   inject('fetchDocuments', () => {
-    return $axios.$get(`${process.env.cdnUrl}/data/documents.json`)
+    return $axios.$get(`${process.env.cdnUrl}/data/docs.json`)
   })
   // Articles
   inject('fetchArticles', () => {
-    return $axios.$get(`${process.env.apiUrl}/articles`)
+    return $axios.$get(`${process.env.cdnUrl}/data/articles.json`)
   })
 }

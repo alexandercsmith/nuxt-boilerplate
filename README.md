@@ -54,3 +54,9 @@ $ npm run generate
 * Nanum Gothic `https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap`
 * Abel `https://fonts.googleapis.com/css?family=Abel&display=swap`
 * Mandali `https://fonts.googleapis.com/css?family=Mandali&display=swap`
+* Open Sans `https://fonts.googleapis.com/css?family=Open+Sans&display=swap`
+
+
+## Error Fonts
+
+* Codystar `https://fonts.googleapis.com/css?family=Codystar&display=swap`
