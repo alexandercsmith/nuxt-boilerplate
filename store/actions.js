@@ -1,7 +1,7 @@
 export default {
   nuxtClientInit: async function({ dispatch }) {
     await dispatch('loadDocs')
-    await dispatch('blog/loadArticles')
+    await dispatch('blog/loadBlog')
   },
   loadDocs: async function({ commit }) {
     await this.$fetchDocuments().then(res => {

@@ -41,6 +41,6 @@ export default () => ({
   },
   blog: {
     articles: [],
-    tags: ["News"]
+    tags: []
   }
 })

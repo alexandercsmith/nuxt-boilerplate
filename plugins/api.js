@@ -3,8 +3,8 @@ export default ({ $axios }, inject) => {
   inject('fetchDocuments', () => {
     return $axios.$get(`${process.env.cdnUrl}/data/docs.json`)
   })
-  // Articles
+  // Blog
   inject('fetchArticles', () => {
-    return $axios.$get(`${process.env.cdnUrl}/data/articles.json`)
+    return $axios.$get(`${process.env.cdnUrl}/data/blog.json`)
   })
 }
