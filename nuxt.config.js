@@ -11,7 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'keywords', name: 'keywords', content: '' },
+      { hid: 'keywords', name: 'keywords', content: 'one, two, three' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [

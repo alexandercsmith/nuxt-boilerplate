@@ -7,7 +7,7 @@ export default () => ({
     url: 'https://_.com',
     email: ''
   },
-  documents: {
+  docs: {
     disclaimer: null,
     terms: null,
     privacy: null
@@ -15,32 +15,32 @@ export default () => ({
   socials: {
     facebook: {
       username: '',
-      url: '',
+      url: 'https://www.facebook.com/',
       icon: 'facebook-square'
     },
     instagram: {
       username: '',
-      url: '',
+      url: 'https://www.instagram.com/',
       icon: 'instagram'
     },
     twitter: {
       username: '',
-      url: '',
+      url: 'https://www.twitter.com/',
       icon: 'twitter-square'
     },
     youtube: {
       username: '',
-      url: '',
+      url: 'https://www.youtube.com/',
       icon: 'youtube-square'
     },
     github: {
       username: '',
-      url: '',
+      url: 'https://www.github.com/',
       icon: 'github-square'
     }
   },
   blog: {
-    articles: [],
-    tags: []
+    articles: null,
+    tags: null
   }
 })

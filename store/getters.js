@@ -6,12 +6,12 @@ export default {
     return state.socials
   },
   getDisclaimer: state => {
-    return state.documents.disclaimer
+    return state.docs.disclaimer
   },
   getPrivacyPolicy: state => {
-    return state.documents.privacy
+    return state.docs.privacy
   },
   getTermsConditions: state => {
-    return state.documents.terms
+    return state.docs.terms
   }
 }
