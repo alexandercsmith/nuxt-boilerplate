@@ -1,8 +1,8 @@
 export default {
-  siteInfo: state => {
+  getInfo: state => {
     return state.site
   },
-  socialInfo: state => {
+  getSocials: state => {
     return state.socials
   },
   getDisclaimer: state => {

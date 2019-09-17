@@ -1,6 +1,6 @@
 <template>
-  <div class="search-bar">
-    <h1>Article Search</h1>
+  <div class="search-bar col-1-1">
+    <input type="text" v-model="search" placeholder="Search..." />
   </div>
 </template>
 
