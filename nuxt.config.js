@@ -4,7 +4,7 @@ import webpack from 'webpack'
 import axios from 'axios'
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
 
   head: {
     title: pkg.name,
@@ -44,7 +44,6 @@ export default {
   ],
 
   modules: [
-    '@nuxtjs/auth',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/dotenv',
@@ -56,34 +55,24 @@ export default {
     }]
   ],
 
-  // auth: {
-  //
-  // },
-
-  // generate: {
-  //   routes: function() {
-  //     return axios.get(`${process.env.API_URL}/articles`)
-  //       .then((res) => {
-  //         return res.data.map((item) => {
-  //           return `/blog/${item.slug}`
-  //         })
-  //       })
-  //       .catch((err) => {
-  //         console.log('Error: ' + err)
-  //       })
-  //   }
-  // },
+  generate: {
+    routes: function() {
+      return axios.get(`${process.env.API_URL}/articles`)
+        .then((res) => {
+          return res.data.map((item) => {
+            return `/blog/${item.slug}`
+          })
+        })
+        .catch((err) => {
+          console.log('Error: ' + err)
+        })
+    }
+  },
 
   sitemap: {
     hostname: 'https://www._.com',
     gzip: true,
-    cacheTime: 1000 * 60 * 15,
-    routes () {
-      return axios.get('')
-        .then(res => res.data.map(article =>
-          `/blog/${article.slug}`)
-        )
-    }
+    cacheTime: 1000 * 60 * 15
   },
 
   build: {

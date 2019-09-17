@@ -3,7 +3,9 @@ html, body {
   margin: 0;
 }
 
-section {}
+section {
+  width: 100%;
+}
 
 h1 {}
 h2 {}
