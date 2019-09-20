@@ -24,7 +24,9 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Sorry, something went wrong. Please refresh or return to the Home page.' }
+          content:
+            'Sorry, something went wrong. Please refresh or return to the Home page.'
+        }
       ],
       link: [
         {

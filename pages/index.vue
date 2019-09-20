@@ -24,19 +24,21 @@
       <li>Item C</li>
     </ol>
 
-    <form>
-      <input type="text" placeholder="Text Input..." /><br />
-      <select>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-      </select>
-      <br />
-      <textarea></textarea>
-      <br />
-      <input type="radio" /> Radio <br />
-      <input type="checkbox" /> Checkbox <br />
-      <input type="submit" />
-    </form>
+    <div class="container">
+      <form>
+        <input type="text" placeholder="Text Input..." /><br />
+        <select>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+        </select>
+        <br />
+        <textarea></textarea>
+        <br />
+        <input type="radio" /> Radio <br />
+        <input type="checkbox" /> Checkbox <br />
+        <input type="submit" />
+      </form>
+    </div>
   </section>
 </template>
 
@@ -48,4 +50,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.container {
+  margin: $margin;
+}
+</style>

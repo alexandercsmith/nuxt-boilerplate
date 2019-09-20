@@ -1,6 +1,6 @@
 <template>
   <div class="search-bar col-1-1">
-    <input type="text" v-model="search" placeholder="Search..." />
+    <input v-model="search" type="text" placeholder="Search..." />
   </div>
 </template>
 
@@ -24,5 +24,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.search-bar {}
+.search-bar {
+}
 </style>
