@@ -55,12 +55,21 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/dotenv',
     '@nuxtjs/sitemap',
+    '@nuxtjs/toast',
     '@nuxtjs/style-resources',
     ['@nuxtjs/google-analytics', {
       id: process.env.ANALYTICS_ID,
       dev: false
     }]
   ],
+
+  toast: {
+    position: 'top-center',
+    duration: 5000,
+    fullWidth: true,
+    fitToWidth: true,
+    keepOnHover: true
+  },
 
   generate: {
     routes: function() {
