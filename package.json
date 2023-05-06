@@ -22,7 +22,7 @@
     "@nuxtjs/toast": "^3.2.1",
     "cross-env": "^5.2.0",
     "lodash": "^4.17.15",
-    "nuxt": "^2.9.2",
+    "nuxt": "^2.16.3",
     "vue-awesome": "^3.5.4"
   },
   "devDependencies": {
